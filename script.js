@@ -1,4 +1,4 @@
-var apiKey = config.apiKey;
+var apiKey = "5a5474fd63875fccee47ce53a36563d5";
 
 /*Initializing booleans to save quiz results*/
 
