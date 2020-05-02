@@ -97,3 +97,19 @@
     transition: background 0.3s ease-in-out;
     margin-bottom: 30px;
 }
+
+.refresh  button{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;
+    margin-left: 695px;
+    border-radius: 5px;
+    background:#97d3c7;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 30px;
+  }
+
+  .refresh button:hover {
+    background: lightseagreen;
+  }
