@@ -24,16 +24,13 @@ const DialogContent = withStyles((theme) => ({
 
 function App() {
 
-  
-  var link;
-  
-
   {/*Setting hair texture value given user input and getting product recommendations from a popular review website.
   In the future, plan to use web scrapping to find products matching the user's input*/}
   const [select, setSelect] = React.useState('');
+  const [link, setLink] = React.useState('');
   const handleSelect = (event) => {
       setSelect(event.target.value);
-      link = "https://www.influenster.com/reviews/search?q=curly" + select;
+      setLink("https://www.influenster.com/reviews/search?q=" + select);
   };
 
   {/*Controlling open and close state of dialog with results*/}
@@ -102,9 +99,9 @@ function App() {
             <MenuItem value="">
               <em>None</em>
             </MenuItem>
-            <MenuItem value={10}>Wavy</MenuItem>
-            <MenuItem value={20}>Curly</MenuItem>
-            <MenuItem value={30}>Coily</MenuItem>
+            <MenuItem value={'wavy'}>Wavy</MenuItem>
+            <MenuItem value={'curly'}>Curly</MenuItem>
+            <MenuItem value={'coily'}>Coily</MenuItem>
           </Select>
         </FormControl>
 
