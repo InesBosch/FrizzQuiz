@@ -84,7 +84,7 @@ function App() {
 
         {/*Question 1: Hair type */}
         <h2>Question 1: Hair Type</h2>
-        <img src={hair} alt="woman with curly hair" />
+        <img src={hair} alt="woman with curly hair" style={{height: '40vmin'}}/>
         <p><i>How curly (or not!) is your hair?</i></p>
         <FormControl variant="outlined">
           <InputLabel id="demo-simple-select-outlined-label">Hair Type</InputLabel>
@@ -107,7 +107,7 @@ function App() {
 
         {/*Question 2: Location */}
         <h2>Question 2: Weather</h2>
-        <img src={world} alt="globe" />
+        <img src={world} alt="globe" style={{height: '40vmin'}}/>
             <p><i>What is your current location?</i></p>
             <TextField name="location" id="outlined-basic" label="City,Country" variant="outlined" location={location} onChange={handleChange}/>
       </header>
