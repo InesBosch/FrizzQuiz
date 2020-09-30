@@ -30,14 +30,14 @@ function App() {
   const [link, setLink] = React.useState('');
   const handleSelect = (event) => {
       setSelect(event.target.value);
-      setLink("https://www.influenster.com/reviews/search?q=" + select);
   };
 
   {/*Controlling open and close state of dialog with results*/}
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
-    setOpen(true);
+    setLink("https://www.influenster.com/reviews/search?q=" + select);
     getHumidity(location);
+    setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
@@ -54,12 +54,11 @@ function App() {
   const [frizz,setFrizz] = React.useState('');
   const [pic,setPic] = React.useState('')
 
-  var getHumidity = (location)=>{
+  const getHumidity = (location)=>{
     var url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5a5474fd63875fccee47ce53a36563d5&units=metric`;
       fetch(url).then(response => response.json())
         .then(data => { 
           setCurrhumidity(data['main']['humidity']);
-          console.log("Before" + Currhumidity);
           if(Currhumidity < 50){
             setFrizz('no frizz');
             setPic(happy);
@@ -69,7 +68,6 @@ function App() {
             setPic(shock);
           }
         });
-        console.log("After" + Currhumidity);
   }
 
   return (
