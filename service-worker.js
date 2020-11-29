@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FrizzQuiz/precache-manifest.c96d489099b2e6beb76574426b2916f8.js"
+  "/FrizzQuiz/precache-manifest.2753ea003336e07f1854ddd2e9ebe143.js"
 );
 
 self.addEventListener('message', (event) => {
