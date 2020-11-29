@@ -32,43 +32,40 @@ function App() {
       setSelect(event.target.value);
   };
 
-  {/*Controlling open and close state of dialog with results*/}
-  const [open, setOpen] = React.useState(false);
-  const handleClickOpen = () => {
-    setLink("https://www.influenster.com/reviews/search?q=" + select);
-    getHumidity(location);
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   {/*Setting location given user input*/}
   const [location, setLocation] = React.useState('');
   const handleChange = (event) => {
       setLocation(event.target.value);
   };
 
-  {/*Function to get humidity from OpenWeatherMap API */}
-  const [Currhumidity,setCurrhumidity] = React.useState(0);
+  {/*Set phrase and picture depending on user input*/}
   const [frizz,setFrizz] = React.useState('');
   const [pic,setPic] = React.useState('')
 
-  const getHumidity = (location)=>{
+  {/*Controlling open and close state of dialog with results*/}
+  const [open, setOpen] = React.useState(false);
+
+  {/*Display results in dialog window*/}
+  const handleClickOpen = async () => {
     var url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5a5474fd63875fccee47ce53a36563d5&units=metric`;
       fetch(url).then(response => response.json())
         .then(data => { 
-          setCurrhumidity(data['main']['humidity']);
-          if(Currhumidity < 50){
+          if(data['main']['humidity'] < 50){
             setFrizz('no frizz');
             setPic(happy);
           }
-          if(Currhumidity >= 50){
+          if(data['main']['humidity'] >= 50){
             setFrizz('frizz');
             setPic(shock);
           }
         });
-  }
+    setLink("https://www.influenster.com/reviews/search?q=" + select);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div className="App">
@@ -94,9 +91,6 @@ function App() {
             label="Hair Type"
             style={{minWidth:'120px'}}
           >
-            <MenuItem value="">
-              <em>None</em>
-            </MenuItem>
             <MenuItem value={'wavy'}>Wavy</MenuItem>
             <MenuItem value={'curly'}>Curly</MenuItem>
             <MenuItem value={'coily'}>Coily</MenuItem>
