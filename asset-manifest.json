@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/FrizzQuiz/static/css/main.b70b619c.chunk.css",
-    "main.js": "/FrizzQuiz/static/js/main.7841bd95.chunk.js",
-    "main.js.map": "/FrizzQuiz/static/js/main.7841bd95.chunk.js.map",
+    "main.js": "/FrizzQuiz/static/js/main.30fbd53b.chunk.js",
+    "main.js.map": "/FrizzQuiz/static/js/main.30fbd53b.chunk.js.map",
     "runtime-main.js": "/FrizzQuiz/static/js/runtime-main.6ac0967b.js",
     "runtime-main.js.map": "/FrizzQuiz/static/js/runtime-main.6ac0967b.js.map",
-    "static/js/2.b554c3de.chunk.js": "/FrizzQuiz/static/js/2.b554c3de.chunk.js",
-    "static/js/2.b554c3de.chunk.js.map": "/FrizzQuiz/static/js/2.b554c3de.chunk.js.map",
+    "static/js/2.379cebe9.chunk.js": "/FrizzQuiz/static/js/2.379cebe9.chunk.js",
+    "static/js/2.379cebe9.chunk.js.map": "/FrizzQuiz/static/js/2.379cebe9.chunk.js.map",
     "index.html": "/FrizzQuiz/index.html",
-    "precache-manifest.e34625ed48dd4bbdda1e6e37e7478466.js": "/FrizzQuiz/precache-manifest.e34625ed48dd4bbdda1e6e37e7478466.js",
+    "precache-manifest.c96d489099b2e6beb76574426b2916f8.js": "/FrizzQuiz/precache-manifest.c96d489099b2e6beb76574426b2916f8.js",
     "service-worker.js": "/FrizzQuiz/service-worker.js",
     "static/css/main.b70b619c.chunk.css.map": "/FrizzQuiz/static/css/main.b70b619c.chunk.css.map",
-    "static/js/2.b554c3de.chunk.js.LICENSE.txt": "/FrizzQuiz/static/js/2.b554c3de.chunk.js.LICENSE.txt",
+    "static/js/2.379cebe9.chunk.js.LICENSE.txt": "/FrizzQuiz/static/js/2.379cebe9.chunk.js.LICENSE.txt",
     "static/media/curly.png": "/FrizzQuiz/static/media/curly.c4bde206.png",
     "static/media/idk.png": "/FrizzQuiz/static/media/idk.51890222.png",
     "static/media/shock.png": "/FrizzQuiz/static/media/shock.9d42c51e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6ac0967b.js",
-    "static/js/2.b554c3de.chunk.js",
+    "static/js/2.379cebe9.chunk.js",
     "static/css/main.b70b619c.chunk.css",
-    "static/js/main.7841bd95.chunk.js"
+    "static/js/main.30fbd53b.chunk.js"
   ]
 }
