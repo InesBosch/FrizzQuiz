@@ -1,3 +1,3 @@
 # FrizzQuiz
 See if your hair is destined to frizz up today and get product recommendations to prevent frizz
-![FrizzQuiz Interface](frizz-quiz/src/images/demo.mp4)
+![FrizzQuiz Interface](frizz-quiz/src/images/demo.gif)
